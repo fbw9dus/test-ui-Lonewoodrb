@@ -19,14 +19,23 @@ Projekt für Test im UI Modul
 ![](drafts/desktop.JPG)
 ![](drafts/desktop-button-hover.JPG)
 
-###   __/60 Punkten
+###   38/60 Punkten
 #### Punktabzüge für:
-- [_] (10) Elemente passen sich nicht an Fensterbreite an
-- [_] (10) Tags nicht geschlossen oder falsch verschachtelt
+- [x] (15) Elemente passen sich nicht an Fensterbreite an
+```diff
+- Die Seitenelemente sind bei keiner Seitenbreite richtig angeordnet
+```
+- [x] (4) Tags nicht geschlossen oder falsch verschachtelt
+```diff
+- Ein p-Tag sollte nicht im h1-Tag stehen, die beiden haben unterschiedliche Bedeutungen, die hier unklar werden
+```
 - [_] (5) Block-Tag in Inline-Tag
 - [_] (5) Kinder-Tags im Code nicht eingerückt
 - [_] (10) Zweckfremde Tags verwendet
 - [_] (10) Fehlende essetielle Tags (z.B. Meta-Tags)
 - [_] (5) Falsche Datei-Pfade
-- [_] (10) CSS-Selektoren, die bei Änderungen im HTML sehr leicht fehlschlagen können
+- [x] (3) CSS-Selektoren, die bei Änderungen im HTML sehr leicht fehlschlagen können
+```diff
+- Der selektor `span` ist in diesem Fall zu weitreichend, da er alle spans beeinflussen wird, die zur Seite hinzugefügt werden.
+```
 - [_] (5) Fehlende essentielle Tag-Attribute
